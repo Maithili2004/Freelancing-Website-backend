@@ -48,6 +48,7 @@ app.get('/api/health', (req, res) => {
 })
 
 // Socket.io for real-time chat
+
 io.on('connection', (socket) => {
   console.log('New user connected:', socket.id)
 
